@@ -38,16 +38,51 @@ console.log(mod)
 
 // 3. Imprime 5 comparaciones verdaderas con diferentes operadores de comparación
 
+console.log("Operadores de Comparación (True)")
+console.log(1 < 3)
+console.log(30 > 29)
+console.log(1 >= 1)
+console.log(10 != 9)
+console.log(8 == 16 / 2)
+
 // 4. Imprime 5 comparaciones falsas con diferentes operadores de comparación
+
+console.log("Operadores de Comparación (False)")
+console.log(1 > 3)
+console.log(30 < 29)
+console.log(1 <= 0)
+console.log(9 != 9)
+console.log(8 == 2)
 
 // 5. Utiliza el operador lógico and
 
+console.log ("Operador And")
+
+let ilikearts = false
+let ilikeprog = true
+
+console.log(ilikearts && ilikeprog)
+
 // 6. Utiliza el operador lógico or
 
+console.log("Operador Or")
+console.log(ilikearts || ilikeprog)
+
 // 7. Combina ambos operadores lógicos
+let morning = true
+let sunday = false
+
+console.log(ilikearts && ilikeprog || morning || sunday)
+
 
 // 8. Añade alguna negación
 
+console.log(!(ilikearts && ilikeprog || morning || sunday))
+
 // 9. Utiliza el operador ternario
 
+morning ? console.log("Let's program") : console.log("let's go to work")
+
 // 10. Combina operadores aritméticos, de comparáción y lógicas
+
+console.log(15 - 2 >= 9 + 4 && 24 / 2 != 3 ** 4)
