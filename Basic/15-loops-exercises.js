@@ -110,6 +110,31 @@ let reverseArray = myArray2.reverse()
 for(let i of reverseArray){
     console.log(i)
 }
+
 // 9. Usa un bucle para generar los primeros 10 números de la secuencia de Fibonacci
+let sumfib_1 = 0
+let sumfib_2 = 1
+let sumfib = 0 
+
+console.log(sumfib_1)
+console.log(sumfib_2)
+
+for(let fib = 0; fib < 11; fib++){ 
+    sumfib = sumfib_1 + sumfib_2
+    console.log(sumfib)
+    sumfib_1 = sumfib_2
+    sumfib_2 = sumfib
+}
 
 // 10. Dado un array de números, usa un bucle para crear un nuevo array que contenga solo los números mayores a 10
+let numArray = [2, 11, 43, 3, 9, 28, 10, 100]
+let newNumArray = []
+
+for(let idx of numArray){
+    if (idx > 10){
+        newNumArray.push(idx)
+    } else{
+        continue
+    }
+}
+console.log(newNumArray)
