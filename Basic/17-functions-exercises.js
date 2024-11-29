@@ -99,7 +99,7 @@ let arr1 = [4, 1, 8]
 let arr2 = [3, 9, 1]
 
 function arrCommon(a1, a2){
-    for(c = 0; c < a1.lenght, c++){
+    for(c = 0; c < a1.lenght; c++){
         if(a1[c] = a2[c]){
             
         }
