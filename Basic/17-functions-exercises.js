@@ -95,16 +95,15 @@ console.log(prime(17))
 
 // 6. Crea una función que reciba dos arrays y devuelva un nuevo array que contenga los elementos comunes entre ambos
 
-let arr1 = [4, 1, 8]
-let arr2 = [3, 9, 1]
-
-function arrCommon(a1, a2){
-    for(c = 0; c < a1.lenght; c++){
-        if(a1[c] = a2[c]){
-            
-        }
-    }
+function common(a1, a2) {
+    return a1.filter(element => a2.includes(element))
 }
+
+const array1 = [1, 2, 3, 4, 5]
+const array2 = [4, 5, 6, 7, 8]
+
+const commonElements = common(array1, array2)
+console.log(commonElements)
 
 // 7. Crea una función que reciba un array de números y devuelva la suma de todos los números pares
 
