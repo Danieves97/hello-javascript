@@ -107,8 +107,56 @@ console.log(commonElements)
 
 // 7. Crea una función que reciba un array de números y devuelva la suma de todos los números pares
 
+function evenSum(array){
+    let sum = 0
+    let evenNumbers = array.filter(element => element % 2 == 0)
+    for(let i of evenNumbers){
+        sum += i
+    }
+    return sum
+}
+
+const array3 = [10, 2, 1, 4, 6]
+
+console.log(evenSum(array3))
+
 // 8. Crea una función que reciba un array de números y devuelva un nuevo array con cada número elevado al cuadrado
+
+function squareArray(array){
+    let newSquareArray = []
+    for(let i of array){
+        newSquareArray.push(i ** 2)
+    }
+    return newSquareArray
+}
+
+const array4 = [10, 2, 1, 4, 6]
+
+console.log(squareArray(array4))
 
 // 9. Crea una función que reciba una cadena de texto y devuelva la misma cadena con las palabras en orden inverso
 
+function invString(string) {
+    return string.split(' ').reverse().join(' ')
+}
+
+const text = "Hello world from JavaScript"
+const result = invString(text)
+console.log(result)
+
 // 10. Crea una función que calcule el factorial de un número dado
+
+function factorial(number){
+    let behindValues = []
+    for(let i = number; i > 0; i--){
+        behindValues.push(i)
+    }
+    
+    let times = 1
+    for(let index of behindValues){
+        times *= index
+    }
+    return times
+}
+
+console.log(factorial(5))

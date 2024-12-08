@@ -98,18 +98,13 @@ for(let unit = 1; unit < 11; unit++){
 
 // 8. Usa un bucle para invertir una cadena de texto
 
-let myString2 = "hola"
-let myArray2 = []
+let myString2 = "hola mundo"
+let result = '';
 
-for(let index of myString2){
-    myArray2.push(index)
+for (let i = myString2.length - 1; i >= 0; i--) {
+    result += myString2[i];
 }
-
-let reverseArray = myArray2.reverse()
-
-for(let i of reverseArray){
-    console.log(i)
-}
+console.log(result)
 
 // 9. Usa un bucle para generar los primeros 10 números de la secuencia de Fibonacci
 let sumfib_1 = 0
