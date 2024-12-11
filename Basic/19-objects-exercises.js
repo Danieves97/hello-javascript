@@ -41,8 +41,23 @@ for(let i in pet){
 
 // 7. Crea un objeto anidado
 
+pet.flea = {
+    color: "brown",
+    activity (){
+        console.log("The flea jumps")
+    }
+}
+
 // 8. Accede y muestra el valor de las propiedades anidadas
+
+console.log(pet.flea.color)
+pet.flea.activity()
+console.log(pet)
 
 // 9. Comprueba si los dos objetos creados son iguales
 
+console.log(pet == pet.flea) //False
+
 // 10. Comprueba si dos propiedades diferentes son iguales
+
+console.log(pet.color == pet.flea.color) //True
